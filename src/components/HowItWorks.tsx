@@ -5,7 +5,26 @@ const steps: Array<{
   title: string;
   description: string;
   forRole: string;
-}> = [];
+}> = [
+  {
+    icon: UserPlus,
+    title: "Créez votre compte",
+    description: "Inscrivez-vous gratuitement en quelques secondes. Aucune carte bancaire requise. Accédez immédiatement à tous nos cours gratuits et commencez votre parcours d'apprentissage.",
+    forRole: "Étudiant"
+  },
+  {
+    icon: BookOpen,
+    title: "Choisissez votre formation",
+    description: "Parcourez notre catalogue de 150+ cours dans 8 domaines différents. Sélectionnez le domaine qui correspond à vos objectifs de carrière et commencez à apprendre à votre rythme.",
+    forRole: "Étudiant"
+  },
+  {
+    icon: Trophy,
+    title: "Obtenez votre certification",
+    description: "Suivez les cours, complétez les projets pratiques et passez les évaluations. Obtenez des certificats reconnus qui valoriseront votre CV et votre profil professionnel.",
+    forRole: "Étudiant"
+  }
+];
 
 const HowItWorks = () => {
   return (
@@ -20,8 +39,8 @@ const HowItWorks = () => {
           </p>
         </div>
         
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div 
                 key={index}

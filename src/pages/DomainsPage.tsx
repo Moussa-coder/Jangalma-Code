@@ -38,7 +38,184 @@ const domains: Array<{
   skills: string[];
   careers: string[];
   courses: number;
-}> = [];
+}> = [
+  {
+    icon: Code,
+    title: "Développement Web",
+    subtitle: "Frontend & Backend",
+    description: "Maîtrisez les technologies modernes du web pour créer des sites et applications web performantes. De HTML/CSS à React, Node.js et les frameworks modernes.",
+    color: "text-blue-600",
+    bgColor: "bg-blue-100",
+    skills: ["HTML/CSS", "JavaScript", "React", "Node.js", "TypeScript", "Vue.js", "Angular", "PHP", "Python", "SQL"],
+    careers: [
+      "Développeur Frontend",
+      "Développeur Backend",
+      "Développeur Full Stack",
+      "Développeur React",
+      "Développeur Vue.js",
+      "Développeur Angular",
+      "Développeur Node.js",
+      "Développeur PHP",
+      "Développeur Python/Django",
+      "Développeur WordPress"
+    ],
+    courses: 25
+  },
+  {
+    icon: Smartphone,
+    title: "Développement Mobile",
+    subtitle: "iOS & Android",
+    description: "Créez des applications mobiles natives et cross-platform pour iOS et Android. Maîtrisez React Native, Flutter, Swift, Kotlin et les meilleures pratiques.",
+    color: "text-green-600",
+    bgColor: "bg-green-100",
+    skills: ["React Native", "Flutter", "Swift", "Kotlin", "Dart", "iOS Development", "Android Development", "Firebase", "App Store", "Google Play"],
+    careers: [
+      "Développeur iOS",
+      "Développeur Android",
+      "Développeur React Native",
+      "Développeur Flutter",
+      "Développeur Mobile Cross-Platform",
+      "Architecte Mobile",
+      "Ingénieur Mobile Senior",
+      "Développeur Swift",
+      "Développeur Kotlin",
+      "Spécialiste Mobile UI/UX"
+    ],
+    courses: 18
+  },
+  {
+    icon: Brain,
+    title: "Intelligence Artificielle",
+    subtitle: "Machine Learning & IA",
+    description: "Explorez l'intelligence artificielle, le machine learning et le deep learning. Créez des modèles prédictifs, des chatbots intelligents et des solutions IA innovantes.",
+    color: "text-purple-600",
+    bgColor: "bg-purple-100",
+    skills: ["Python", "TensorFlow", "PyTorch", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Data Science", "Neural Networks", "Scikit-learn"],
+    careers: [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Ingénieur IA",
+      "Spécialiste NLP",
+      "Spécialiste Computer Vision",
+      "Chercheur en IA",
+      "Développeur de Chatbots",
+      "Analyste IA",
+      "Architecte IA",
+      "Consultant en IA"
+    ],
+    courses: 15
+  },
+  {
+    icon: Megaphone,
+    title: "Marketing Digital",
+    subtitle: "SEO, Social Media & Publicité",
+    description: "Apprenez le marketing digital, le SEO, le marketing sur les réseaux sociaux, la publicité en ligne, l'email marketing et l'analyse de données marketing.",
+    color: "text-orange-600",
+    bgColor: "bg-orange-100",
+    skills: ["SEO", "Google Ads", "Facebook Ads", "Content Marketing", "Email Marketing", "Analytics", "Social Media", "Inbound Marketing", "Growth Hacking", "E-commerce"],
+    careers: [
+      "Responsable Marketing Digital",
+      "Spécialiste SEO",
+      "Gestionnaire de Campagnes Publicitaires",
+      "Community Manager",
+      "Content Manager",
+      "Growth Hacker",
+      "Analyste Marketing",
+      "Spécialiste Email Marketing",
+      "Influenceur Digital",
+      "Consultant en Marketing Digital"
+    ],
+    courses: 20
+  },
+  {
+    icon: Users2,
+    title: "Gestion de Projet",
+    subtitle: "Agile, Scrum & Management",
+    description: "Devenez chef de projet agile, Scrum Master ou Product Owner. Maîtrisez les méthodologies agiles, la gestion d'équipe et la livraison de projets numériques.",
+    color: "text-red-600",
+    bgColor: "bg-red-100",
+    skills: ["Scrum", "Agile", "Kanban", "Jira", "Project Management", "Product Management", "Team Leadership", "Stakeholder Management", "Risk Management", "Budget Management"],
+    careers: [
+      "Chef de Projet Digital",
+      "Scrum Master",
+      "Product Owner",
+      "Product Manager",
+      "Project Manager",
+      "Agile Coach",
+      "Responsable de Programme",
+      "Chef de Projet IT",
+      "Delivery Manager",
+      "Portfolio Manager"
+    ],
+    courses: 12
+  },
+  {
+    icon: Palette,
+    title: "Design UI/UX",
+    subtitle: "Interface & Expérience Utilisateur",
+    description: "Créez des interfaces utilisateur attrayantes et des expériences utilisateur exceptionnelles. Maîtrisez Figma, Adobe XD, le design thinking et les principes UX.",
+    color: "text-pink-600",
+    bgColor: "bg-pink-100",
+    skills: ["Figma", "Adobe XD", "Sketch", "UI Design", "UX Design", "Prototyping", "User Research", "Wireframing", "Design Systems", "Accessibility"],
+    careers: [
+      "Designer UI",
+      "Designer UX",
+      "UI/UX Designer",
+      "Product Designer",
+      "Designer d'Interface",
+      "UX Researcher",
+      "Designer d'Expérience",
+      "Motion Designer",
+      "Designer de Produit",
+      "Designer de Services"
+    ],
+    courses: 16
+  },
+  {
+    icon: Network,
+    title: "Cybersécurité",
+    subtitle: "Sécurité Informatique & Réseaux",
+    description: "Protégez les systèmes et les données contre les cybermenaces. Maîtrisez la sécurité réseau, l'éthique hacking, la gestion des vulnérabilités et la conformité.",
+    color: "text-indigo-600",
+    bgColor: "bg-indigo-100",
+    skills: ["Ethical Hacking", "Network Security", "Penetration Testing", "Security Auditing", "Cryptography", "Incident Response", "Risk Assessment", "Compliance", "Firewall", "SIEM"],
+    careers: [
+      "Analyste en Cybersécurité",
+      "Pentester",
+      "Ingénieur Sécurité",
+      "Architecte Sécurité",
+      "Consultant en Sécurité",
+      "Responsable Sécurité",
+      "Spécialiste SOC",
+      "Auditeur Sécurité",
+      "Expert en Forensique",
+      "Chasseur de Menaces"
+    ],
+    courses: 14
+  },
+  {
+    icon: BarChart,
+    title: "Data Science",
+    subtitle: "Analyse & Visualisation de Données",
+    description: "Analysez et visualisez les données pour prendre des décisions stratégiques éclairées. Maîtrisez Python, R, SQL, les outils de BI et le machine learning.",
+    color: "text-teal-600",
+    bgColor: "bg-teal-100",
+    skills: ["Python", "R", "SQL", "Tableau", "Power BI", "Data Analysis", "Data Visualization", "Statistics", "Big Data", "ETL"],
+    careers: [
+      "Data Analyst",
+      "Business Analyst",
+      "Data Engineer",
+      "BI Analyst",
+      "Statisticien",
+      "Data Engineer",
+      "Analyste Financier",
+      "Data Consultant",
+      "Spécialiste Big Data",
+      "Analyste de Performance"
+    ],
+    courses: 17
+  }
+];
 
 const DomainsPage = () => {
   const navigate = useNavigate();

@@ -7,9 +7,9 @@ import {
   BookOpen,
   Star,
   Users,
-  LinkedinIcon,
-  GithubIcon,
-  TwitterIcon,
+  Linkedin,
+  Github,
+  Twitter,
   Mail,
   Globe,
   Calendar,
@@ -315,11 +315,11 @@ const InstructorDetailPage = () => {
                             Partager sur Facebook
                           </DropdownMenuItem>
                           <DropdownMenuItem onClick={() => handleShare("twitter")}>
-                            <TwitterIcon className="h-4 w-4 mr-2" />
+                            <Twitter className="h-4 w-4 mr-2" />
                             Partager sur Twitter
                           </DropdownMenuItem>
                           <DropdownMenuItem onClick={() => handleShare("linkedin")}>
-                            <LinkedinIcon className="h-4 w-4 mr-2" />
+                            <Linkedin className="h-4 w-4 mr-2" />
                             Partager sur LinkedIn
                           </DropdownMenuItem>
                           <DropdownMenuSeparator />
@@ -424,7 +424,7 @@ const InstructorDetailPage = () => {
                         aria-label="Profil LinkedIn de l'instructeur"
                         className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                       >
-                        <LinkedinIcon className="h-5 w-5 text-primary" />
+                        <Linkedin className="h-5 w-5 text-primary" />
                       </a>
                     )}
                     {instructor.social.github && (
@@ -435,7 +435,7 @@ const InstructorDetailPage = () => {
                         aria-label="Profil GitHub de l'instructeur"
                         className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                       >
-                        <GithubIcon className="h-5 w-5 text-primary" />
+                        <Github className="h-5 w-5 text-primary" />
                       </a>
                     )}
                     {instructor.social.twitter && (
@@ -446,7 +446,7 @@ const InstructorDetailPage = () => {
                         aria-label="Profil Twitter de l'instructeur"
                         className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                       >
-                        <TwitterIcon className="h-5 w-5 text-primary" />
+                        <Twitter className="h-5 w-5 text-primary" />
                       </a>
                     )}
                     {instructor.website && (

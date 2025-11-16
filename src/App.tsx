@@ -22,6 +22,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import InstructorSignupPage from "./pages/InstructorSignupPage";
 import NotFound from "./pages/NotFound";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +55,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Widget Chatbot disponible sur toutes les pages */}
+        <ChatbotWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -16,6 +16,7 @@ import {
   Settings,
   FileText,
   PieChart as PieChartIcon,
+  Calendar,
 } from "lucide-react";
 import {
   ChartContainer,
@@ -44,7 +45,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Calendar } from "lucide-react";
 
 // Données des cours de l'instructeur
 const myCourses: Array<{

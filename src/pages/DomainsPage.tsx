@@ -59,7 +59,7 @@ const domains: Array<{
       "Développeur Python/Django",
       "Développeur WordPress"
     ],
-    courses: 25
+    courses: 0
   },
   {
     icon: Smartphone,
@@ -81,7 +81,7 @@ const domains: Array<{
       "Développeur Kotlin",
       "Spécialiste Mobile UI/UX"
     ],
-    courses: 18
+    courses: 0
   },
   {
     icon: Brain,
@@ -103,7 +103,7 @@ const domains: Array<{
       "Architecte IA",
       "Consultant en IA"
     ],
-    courses: 15
+    courses: 0
   },
   {
     icon: Megaphone,
@@ -125,7 +125,7 @@ const domains: Array<{
       "Influenceur Digital",
       "Consultant en Marketing Digital"
     ],
-    courses: 20
+    courses: 0
   },
   {
     icon: Users2,
@@ -147,7 +147,7 @@ const domains: Array<{
       "Delivery Manager",
       "Portfolio Manager"
     ],
-    courses: 12
+    courses: 0
   },
   {
     icon: Palette,
@@ -169,7 +169,7 @@ const domains: Array<{
       "Designer de Produit",
       "Designer de Services"
     ],
-    courses: 16
+    courses: 0
   },
   {
     icon: Network,
@@ -191,7 +191,7 @@ const domains: Array<{
       "Expert en Forensique",
       "Chasseur de Menaces"
     ],
-    courses: 14
+    courses: 0
   },
   {
     icon: BarChart,
@@ -213,7 +213,7 @@ const domains: Array<{
       "Spécialiste Big Data",
       "Analyste de Performance"
     ],
-    courses: 17
+    courses: 0
   }
 ];
 
@@ -237,7 +237,7 @@ const DomainsPage = () => {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white font-medium">
-                  150+ cours disponibles
+                  Aucun cours disponible pour l'instant
                 </div>
                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white font-medium">
                   Progression suivie

@@ -23,7 +23,7 @@ import {
   Copy,
   Facebook,
   Twitter,
-  LinkedinIcon,
+  Linkedin,
   Link2,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -441,7 +441,7 @@ const CourseDetailPage = () => {
                           Partager sur Twitter
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => handleShare("linkedin")}>
-                          <LinkedinIcon className="h-4 w-4 mr-2" />
+                          <Linkedin className="h-4 w-4 mr-2" />
                           Partager sur LinkedIn
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />

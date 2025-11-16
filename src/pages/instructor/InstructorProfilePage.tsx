@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { UserCircle, Save, Mail, Phone, Globe, LinkedinIcon, GithubIcon, TwitterIcon, Briefcase, GraduationCap } from "lucide-react";
+import { UserCircle, Save, Mail, Phone, Globe, Linkedin, Github, Twitter, Briefcase, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -250,7 +250,7 @@ const InstructorProfilePage = () => {
                 <div className="space-y-2">
                   <Label htmlFor="linkedin">LinkedIn</Label>
                   <div className="relative">
-                    <LinkedinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Linkedin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="linkedin"
                       type="url"
@@ -264,7 +264,7 @@ const InstructorProfilePage = () => {
                 <div className="space-y-2">
                   <Label htmlFor="github">GitHub</Label>
                   <div className="relative">
-                    <GithubIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="github"
                       type="url"
@@ -278,7 +278,7 @@ const InstructorProfilePage = () => {
                 <div className="space-y-2">
                   <Label htmlFor="twitter">Twitter / X</Label>
                   <div className="relative">
-                    <TwitterIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Twitter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="twitter"
                       type="url"

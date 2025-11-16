@@ -13,9 +13,9 @@ import {
   GraduationCap,
   FileText,
   Globe,
-  LinkedinIcon,
-  GithubIcon,
-  TwitterIcon,
+  Linkedin,
+  Github,
+  Twitter,
 } from "lucide-react";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
@@ -59,7 +59,17 @@ const InstructorSignupPage = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const domains: string[] = [];
+  // Liste des domaines disponibles
+  const domains: string[] = [
+    "Développement Web",
+    "Développement Mobile",
+    "Intelligence Artificielle",
+    "Marketing Digital",
+    "Gestion de Projet",
+    "Design UI/UX",
+    "Cybersécurité",
+    "Data Science"
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -239,22 +249,43 @@ const InstructorSignupPage = () => {
                         <Label htmlFor="domain">
                           Domaine d'expertise <span className="text-destructive">*</span>
                         </Label>
-                        <Select
-                          value={formData.domain}
-                          onValueChange={(value) => handleChange("domain", value)}
-                          required
-                        >
-                          <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez un domaine" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {domains.map((domain) => (
-                              <SelectItem key={domain} value={domain}>
-                                {domain}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
+                        <div onClick={(e) => e.stopPropagation()}>
+                          <Select
+                            value={formData.domain}
+                            onValueChange={(value) => {
+                              handleChange("domain", value);
+                            }}
+                            required
+                          >
+                            <SelectTrigger
+                              onClick={(e) => {
+                                e.stopPropagation();
+                              }}
+                            >
+                              <SelectValue placeholder="Sélectionnez un domaine" />
+                            </SelectTrigger>
+                            <SelectContent
+                              onClick={(e) => {
+                                e.stopPropagation();
+                              }}
+                              onPointerDown={(e) => {
+                                e.stopPropagation();
+                              }}
+                            >
+                              {domains.map((domain) => (
+                                <SelectItem 
+                                  key={domain} 
+                                  value={domain}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                  }}
+                                >
+                                  {domain}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        </div>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -315,7 +346,7 @@ const InstructorSignupPage = () => {
                       <div className="space-y-2">
                         <Label htmlFor="linkedin">LinkedIn</Label>
                         <div className="relative">
-                          <LinkedinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                          <Linkedin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                           <Input
                             id="linkedin"
                             type="url"
@@ -329,7 +360,7 @@ const InstructorSignupPage = () => {
                       <div className="space-y-2">
                         <Label htmlFor="github">GitHub</Label>
                         <div className="relative">
-                          <GithubIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                          <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                           <Input
                             id="github"
                             type="url"
@@ -343,7 +374,7 @@ const InstructorSignupPage = () => {
                       <div className="space-y-2">
                         <Label htmlFor="twitter">Twitter / X</Label>
                         <div className="relative">
-                          <TwitterIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                          <Twitter className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                           <Input
                             id="twitter"
                             type="url"

@@ -328,11 +328,15 @@ const CoursesPage = () => {
           {filteredCourses.length === 0 && (
             <div className="text-center py-16">
               <p className="text-xl text-muted-foreground mb-4">
-                Aucun cours trouvé pour cette recherche
+                {courses.length === 0 
+                  ? "Aucun cours disponible pour l'instant" 
+                  : "Aucun cours trouvé pour cette recherche"}
               </p>
-              <Button onClick={() => { setSearchQuery(""); setSelectedDomain("Tous"); }}>
-                Réinitialiser les filtres
-              </Button>
+              {courses.length > 0 && hasActiveFilters && (
+                <Button onClick={resetFilters}>
+                  Réinitialiser les filtres
+                </Button>
+              )}
             </div>
           )}
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Filter, MapPin, Award, BookOpen, Star, Users, LinkedinIcon, GithubIcon, TwitterIcon } from "lucide-react";
+import { Search, Filter, MapPin, Award, BookOpen, Star, Users, Linkedin, Github, Twitter } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -216,7 +216,7 @@ const InstructorsPage = () => {
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <LinkedinIcon className="h-5 w-5" />
+                        <Linkedin className="h-5 w-5" />
                       </a>
                     )}
                     {instructor.social.github && (
@@ -226,7 +226,7 @@ const InstructorsPage = () => {
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <GithubIcon className="h-5 w-5" />
+                        <Github className="h-5 w-5" />
                       </a>
                     )}
                     {instructor.social.twitter && (
@@ -236,7 +236,7 @@ const InstructorsPage = () => {
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <TwitterIcon className="h-5 w-5" />
+                        <Twitter className="h-5 w-5" />
                       </a>
                     )}
                   </div>

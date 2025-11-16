@@ -91,7 +91,7 @@ const Navigation = () => {
               Connexion
             </Button>
             <Button className="bg-gradient-primary" onClick={handleSignup}>
-              S'inscrire
+              Inscription
             </Button>
           </div>
 
@@ -137,7 +137,7 @@ const Navigation = () => {
                   Connexion
                 </Button>
                 <Button className="w-full bg-gradient-primary justify-start" onClick={handleSignup}>
-                  S'inscrire
+                  Inscription
                 </Button>
               </div>
             </nav>
